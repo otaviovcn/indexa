@@ -1,3 +1,7 @@
 <app-container>
-  <h1>Indexa</h1>
+  <app-cabecalho></app-cabecalho>
+  @for (letra of alfabeto; track letra) {
+    <app-separador>{{ letra }}</app-separador>
+    <app-contato nome="Vinícius" telefone="81 9 9999-8888"></app-contato>
+  }
 </app-container>
