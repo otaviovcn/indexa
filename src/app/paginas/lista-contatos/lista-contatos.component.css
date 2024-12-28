@@ -15,6 +15,7 @@ input {
 .adicionar-contato {
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .adicionar-contato button {
@@ -23,7 +24,7 @@ input {
   padding: 6px, 12px;
   border-radius: 4px;
   border: 1px;
-  color: #0D6EFD;
+  cursor: pointer;
   border: 1px solid #0D6EFD;
   background-color: white;
   font-family: 'Montserrat';
