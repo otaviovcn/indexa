@@ -60,7 +60,7 @@
         [ngClass]="contatoForm.valid ? 'botao-salvar' : 'botao-desabilitado'"
         type="submit"
       >
-        Salvar Contato
+        {{ id ? "Editar Contato" : "Salvar Contato" }}
       </button>
     </section>
 

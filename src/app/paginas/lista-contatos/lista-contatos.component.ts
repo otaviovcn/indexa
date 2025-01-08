@@ -9,6 +9,7 @@ import { SeparadorComponent } from '../../componentes/separador/separador.compon
 import { ContatoComponent } from '../../componentes/contato/contato.component';
 import { Contato } from '../../interfaces/IContato';
 import { ContatoService } from '../../services/contato.service';
+import { PerfilContatoComponent } from '../perfil-contato/perfil-contato.component';
 
 
 @Component({
@@ -21,8 +22,8 @@ import { ContatoService } from '../../services/contato.service';
     ContainerComponent,
     CabecalhoComponent,
     SeparadorComponent,
-    ContatoComponent,
-  ],
+    ContatoComponent
+],
   templateUrl: './lista-contatos.component.html',
   styleUrl: './lista-contatos.component.css'
 })

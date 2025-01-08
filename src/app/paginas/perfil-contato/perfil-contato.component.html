@@ -1,0 +1,72 @@
+<app-container>
+  <header>
+    <section class="cabecalho-link">
+      <img src="../../../assets/logo.png" alt="Logo">
+      <div>
+        <button>
+          <img class="seta" src="../../../assets/arrow-left.png" alt="Botão de voltar contato">
+          <a routerLink="/lista-contatos">Voltar</a>
+        </button>
+      </div>
+    </section>
+    <section class="cabecalho-contato">
+      <img src="../../../assets/perfil-contato.png" alt="Adicionar Contato">
+      <h1>Perfil Contato</h1>
+    </section>
+  </header>
+
+  <section class="perfil">
+    <ul>
+
+      <li>
+        <span class="material-symbols-outlined">person</span>
+        <strong>Nome</strong>
+      </li>
+      <li>
+        {{ contato.nome }}
+      </li>
+
+      <li>
+        <span class="material-symbols-outlined">call</span>
+        <strong>Telefone</strong>
+      </li>
+      <li>
+        {{ contato.telefone }}
+      </li>
+      
+      <li>
+        <span class="material-symbols-outlined">mail</span>
+        <strong>Email</strong>
+      </li>
+      <li>
+        {{ contato.email }}
+      </li>
+      
+      <li>
+        <span class="material-symbols-outlined">event_available</span>
+        <strong>Data de nascimento</strong>
+      </li>
+      <li>
+        {{ contato.aniversario }}
+      </li>
+      
+      <li>
+        <span class="material-symbols-outlined">language</span>
+        <strong>Redes sociais</strong>
+      </li>
+      <li>
+        {{ contato.redes }}
+      </li>
+
+    </ul>
+    <div class="botoes">
+      <button (click)="excluir()" class="botao-excluir">
+        Excluir contato
+      </button>
+      <button (click)="editar()" class="botao-editar">
+        Editar
+      </button>
+    </div>
+  </section>
+
+</app-container>
