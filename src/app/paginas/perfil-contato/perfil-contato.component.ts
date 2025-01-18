@@ -3,14 +3,16 @@ import { ContainerComponent } from "../../componentes/container/container.compon
 import { Contato } from '../../interfaces/IContato';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { ContatoService } from '../../services/contato.service';
+import { SeparadorComponent } from "../../componentes/separador/separador.component";
 
 @Component({
   selector: 'app-perfil-contato',
   standalone: true,
   imports: [
     ContainerComponent,
-    RouterLink
-  ],
+    RouterLink,
+    SeparadorComponent
+],
   templateUrl: './perfil-contato.component.html',
   styleUrl: './perfil-contato.component.css'
 })
@@ -19,6 +21,7 @@ export class PerfilContatoComponent {
   contato: Contato = {
     id: 0,
     nome: "dev",
+    avatar: "",
     telefone: "8198888-7777",
     email: "teste@teste.com",
     aniversario: "01/01/2001",
